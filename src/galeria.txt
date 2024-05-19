@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <?php
+    $klasaObrazka = "obrazek";
+    $folderDzien1 = 'img/wymiana-zdjecia/dzien1/';
+    if ($handle = opendir($folderDzien1)) {
+        while (($file = readdir($handle)) !== false) {
+            if (preg_match('/\.(jpg|png|gif)$/i', $file)) {
+                echo "<img src='$folderDzien1$file' class='$klasaObrazka'/>";
+            }
+        }
+        closedir($handle);
+    }
+?>
+<!--i tak do każdego dnia trzeba zrobić -->
+</body>
+</html>
