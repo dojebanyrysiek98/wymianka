@@ -364,16 +364,16 @@
         bottom: 10px;
         left: 10px;
         cursor: pointer;
-        font-size: 16px;
-        color: var(--zloty); 
+        font-size: 1px;
+        color: #daa52000; 
         text-decoration: none;
         border-radius: 4px;
         padding: 5px 10px;
-        border: 1px solid var(--zloty);
+        border: 1px solid #daa52000;
       }
       .back-to-home:hover {
-        background-color: var(--zloty);
-        color: #fff;
+        background-color: #daa52000;
+        color: #ffffff00;
       }
 
 
